@@ -1,5 +1,12 @@
 <?php
 
+if($_SESSION['role'] == '0'){
+    header ('Location: http://localhost/news-template/admin/post.php');
+}
+
+?>
+<?php
+
 include 'config.php';
 $user_id = $_GET['id'];
 
