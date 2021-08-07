@@ -1,5 +1,11 @@
 <?php include "header.php"; ?>
+<?php
 
+if($_SESSION['role'] == '0'){
+    header ('Location: http://localhost/news-template/admin/post.php');
+}
+
+?>
 <?php
  if(isset($_POST['submit'])){
       include 'config.php';
@@ -81,7 +87,7 @@
                                   <option value="1" selected>Admin</option>';
                               }else if($row['role'] == 0) {
                                   echo '<option value="0" selected>normal User</option>
-                                  <option value="1" >Admin</option>';
+                                  <option value="0" >Normal</option>';
                               }
                               
                               ?>
