@@ -1,3 +1,11 @@
+<?php
+
+if($_SESSION['role'] == '0'){
+    header ('Location: http://localhost/news-template/admin/post.php');
+}
+
+?>
+
 <?php include "header.php"; ?>
   <div id="admin-content">
       <div class="container">
