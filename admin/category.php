@@ -71,7 +71,7 @@
 
                     echo "<ul class='pagination admin-pagination'>";
                     if($page >1){
-                        echo "<li><a href='users.php?page=".($page-1)."'>Prev</a></li>";
+                        echo "<li><a href='category.php?page=".($page-1)."'>Prev</a></li>";
                     }
                 for($i=1; $i <= $total_page; $i++){
                     if($i == $page){
@@ -79,10 +79,10 @@
                     }else{
                         $active = "";
                     }
-                    echo "<li class ='".$active."'><a href='users.php?page=".$i."'>".$i."</a></li>";
+                    echo "<li class ='".$active."'><a href='category.php?page=".$i."'>".$i."</a></li>";
                 }
                 if($total_page > $page){
-                    echo "<li><a href='users.php?page=".($page + 1)."'>Next</a></li>";
+                    echo "<li><a href='category.php?page=".($page + 1)."'>Next</a></li>";
                 }
                 echo "</ul>";
             }
