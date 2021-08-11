@@ -48,7 +48,7 @@
                             <td><?php echo $row['category_name'] ?></td>
                             <td><?php echo $row['post'] ?></td>
                             <td class='edit'><a href='update-category.php'><i class='fa fa-edit'></i></a></td>
-                            <td class='delete'><a href='delete-category.php'><i class='fa fa-trash-o'></i></a></td>
+                            <td class='delete'><a href='delete-category.php?id=<?php echo $row['category_id'] ?>'><i class='fa fa-trash-o'></i></a></td>
                         </tr>
                       
                     </tbody>
@@ -60,7 +60,7 @@
             ?>
                <?php
                
-               $sql1 = "SELECT * FROm category";
+               $sql1 = "SELECT * FROM category";
             
             $result1 = mysqli_query($conn,$sql1) or die('QUERY ERROR');
 
