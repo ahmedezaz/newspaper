@@ -52,6 +52,7 @@
                
                 ?>
                 <ul class='menu'>
+                    <li><a  href='http://localhost/news-template'>Home</a></li>
                     <?php  while($row = mysqli_fetch_assoc($result)){ 
                         
                        if(isset($_GET['cid'])){
