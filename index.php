@@ -54,7 +54,9 @@
                                             </span>
                                         </div>
                                         <p class="description">
-                                        <?php echo substr($row['description'],0,150)."..." ?>                                        </p>
+                                        <?php echo substr($row['description'],0,150)."...";
+                                            // substr is used to define length. 3 parameter. name, start, end
+                                            ?>                                        </p>
                                         <a class='read-more pull-right' href='single.php?id=<?php echo $row['post_id']?>'>read more</a>
                                     </div>
                                 </div>
