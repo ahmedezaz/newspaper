@@ -36,7 +36,8 @@
             <div class="col-md-12">
                 <?php
                 $conn = mysqli_connect('localhost', 'root', '', 'news-site');
-
+                
+                // This if condition is used cause we are not clicking this button at first so when we click that id then it will work
                 if(isset($_GET['cid'])){
                     $cat_id = $_GET['cid'];
                 }
