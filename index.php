@@ -23,6 +23,8 @@
                     LEFT JOIN category ON post.category = category.category_id
                     LEFT JOIN user ON post.author = user.user_id
                     ORDER BY post.post_id DESC LIMIT {$offset}, {$limit}";
+                        
+                        // offset and limit is the parameter of LIMIT keyword for pagination
 
             $result = mysqli_query($conn, $sql) or die('SQL ERROR');
 
