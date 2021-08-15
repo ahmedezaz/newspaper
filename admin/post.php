@@ -42,7 +42,7 @@
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_assoc($result)){
 
-            
+            // delete paarmeter post.category not working thats why use only category like $row['category'] 
 
               ?>
 
@@ -64,7 +64,7 @@
                               <td><?php echo $row['post_date'] ?></td>
                               <td><?php echo $row['username'] ?></td>
                               <td class='edit'><a href='update-post.php?id=<?php echo $row['post_id'] ?>'><i class='fa fa-edit'></i></a></td>
-                            // delete paarmeter post.category not working thats why use only category like $row['category']  
+                             
                             <td class='delete'><a href='delete-post.php?id=<?php echo $row['post_id']; ?>&catid=<?php echo $row['category']; ?>'><i class='fa fa-trash-o'></i></a></td>
                           </tr>
                           
