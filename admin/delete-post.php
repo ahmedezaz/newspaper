@@ -11,6 +11,8 @@ $conn = mysqli_connect('localhost', 'root', '', 'news-site');
 $user_id = $_GET['id'];
 $cat_id = $_GET['catid'];
 
+// use cat_id is used to delete the category quantity while delete entire post
+
 echo $user_id;
 echo $cat_id;
 
