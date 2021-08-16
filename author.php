@@ -3,6 +3,7 @@
       <div class="container">
         <div class="row">
             <div class="col-md-8">
+<!-- This page can be make dynamic same way like category page                 -->
                 <!-- post-container -->
                 <div class="post-container">
                   <h2 class="page-heading">Author Name</h2>
