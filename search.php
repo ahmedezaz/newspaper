@@ -38,7 +38,7 @@ $offset = ($page - 1) * $limit;
 $sql = "SELECT post.post_id, post.title, post.description, post.post_date, category.category_name, user.username,post.category, post.post_img FROM post
 LEFT JOIN category ON post.category = category.category_id
 LEFT JOIN user ON post.author = user.user_id
-WHERE post.title LIKE '%{$search_id}%'
+WHERE post.title LIKE '%{$search_id}%' OR post.description LIKE '%{$search_id}%'
 ORDER BY post.post_id DESC LIMIT {$offset}, {$limit}";
 
 $result = mysqli_query($conn, $sql) or die('SQL ERROR SHOW DATA');
@@ -80,12 +80,11 @@ while($row = mysqli_fetch_assoc($result)){
     
     <?php
         }
-    }else {
+    } else {
         echo "No record found";
     }
 
-
-$sql1 = "SELECT * FROM post WHERE post.title LIKE '%{$search_id}%'";
+$sql1 = "SELECT * FROM post WHERE post.title LIKE '%{$search_id}%' OR post.description  LIKE '%{$search_id}%'";
 
 $result1 = mysqli_query($conn,$sql1) or die('QUERY ERROR PAGINATION');
 $row = mysqli_fetch_assoc($result1);
