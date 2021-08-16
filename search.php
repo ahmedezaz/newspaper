@@ -40,6 +40,8 @@ LEFT JOIN category ON post.category = category.category_id
 LEFT JOIN user ON post.author = user.user_id
 WHERE post.title LIKE '%{$search_id}%' OR post.description LIKE '%{$search_id}%'
 ORDER BY post.post_id DESC LIMIT {$offset}, {$limit}";
+                    
+                    // we can use multiple post.something to fetch data based on category and so on.
 
 $result = mysqli_query($conn, $sql) or die('SQL ERROR SHOW DATA');
 
