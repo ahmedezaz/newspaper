@@ -12,6 +12,7 @@
 
                 if(isset($_GET['search'])){
                     $search_id = $_GET['search'];
+                    // $search_id is not define any id we can say only search.
                 }
                 
                 ?>
