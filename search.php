@@ -80,7 +80,10 @@ while($row = mysqli_fetch_assoc($result)){
     
     <?php
         }
+    }else {
+        echo "No record found";
     }
+
 
 $sql1 = "SELECT * FROM post WHERE post.title LIKE '%{$search_id}%'";
 
