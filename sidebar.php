@@ -97,7 +97,7 @@
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                     01 Nov, 2019
                 </span>
-                <a class="read-more" href="single.php">read more</a>
+                <a class="read-more" href="single.php">read more </a>
             </div>
         </div>
     </div>
