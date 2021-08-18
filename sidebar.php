@@ -20,6 +20,7 @@
             $conn = mysqli_connect('localhost', 'root', '', 'news-site');
             $limit = 4;
             
+        //limit 4 means recent 4 posts will appear on sidebar
            
 
           
