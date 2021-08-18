@@ -28,6 +28,8 @@
                     LEFT JOIN category ON post.category = category.category_id
                     LEFT JOIN user ON post.author = user.user_id
                     ORDER BY post.post_id DESC LIMIT {$limit}";
+        
+        //query to fetch post 
          
             
 
