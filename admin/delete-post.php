@@ -25,6 +25,8 @@ unlink("upload/".$row['post_img']);
 $sql = "DELETE FROM post WHERE post_id = {$user_id};";
 $sql .= "UPDATE category SET post= post - 1 WHERE category_id = {$cat_id}";
 
+//post - 1 means it will also delete 1 category from database while delete the post
+
 if(mysqli_multi_query($conn, $sql)){
     header ('Location: http://localhost/news-template/admin/post.php');
 }
