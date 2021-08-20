@@ -32,6 +32,7 @@ if(!isset($_SESSION['username'])){
                     <!-- LOGO -->
                     <div class="col-md-2">
                         <a href="post.php"><img class="logo" src="images/news.jpg"></a>
+<!-- Logo images can be dynamic -->
                     </div>
                     <!-- /LOGO -->
                       <!-- LOGO-Out -->
