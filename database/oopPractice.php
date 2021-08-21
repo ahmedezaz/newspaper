@@ -43,7 +43,7 @@ class manager extends details {
 
 }
 
-$employee = new details("Ashik", 45, 20);
+$employee = new details("Leonard", 45, 20);
 $manager = new manager("Rajon", 55, 30);
 
 
