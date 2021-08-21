@@ -23,6 +23,7 @@ class details{
 }
 
 //details is the parent class of manager
+//manager can use deatils class property and method
 
 class manager extends details {
     public $tel = 20;
