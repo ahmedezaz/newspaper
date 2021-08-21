@@ -22,6 +22,8 @@ class details{
 
 }
 
+//details is the parent class of manager
+
 class manager extends details {
     public $tel = 20;
     public $tea = 50;
