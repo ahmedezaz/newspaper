@@ -44,7 +44,7 @@ class manager extends details {
 }
 
 $employee = new details("Leonard", 45, 20);
-$manager = new manager("Rajon", 55, 30);
+$manager = new manager("Cooper", 55, 30);
 
 
 $employee->info();
